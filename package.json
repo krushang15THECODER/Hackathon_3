@@ -1,0 +1,29 @@
+{
+  "name": "thunder-hackathon",
+  "version": "1.0.0",
+  "description": "Thunder Hackathon Node.js MVP client and server",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "start:server": "node server/server.js",
+    "start:client": "node client/thunder.js",
+    "dev": "nodemon server/server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "hackathon"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.22.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
