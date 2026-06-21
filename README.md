@@ -211,7 +211,7 @@ If your terminal is not already inside the project folder, use `cd`.
 Example:
 
 ```bash
-cd thunder-hackathon-3.0
+cd Hacathon_3-main
 ```
 
 ### 5. Install Dependencies
